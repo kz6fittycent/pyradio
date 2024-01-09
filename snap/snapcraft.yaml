@@ -41,11 +41,15 @@ parts:
         - requests
         - python-dateutil
         - rich
+        - netifaces
     stage-packages:
         - mplayer
         - libpulse0
         - samba-libs
+        - libdca0
+        - libasound2
         - libgpm2
         - libglu1-mesa
         - freeglut3
         - libslang2
+        - libasound2
