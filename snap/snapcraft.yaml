@@ -39,6 +39,7 @@ parts:
         - dnspython
         - psutil
         - requests
+        - python-dateutil
     stage-packages:
         - mplayer
         - libpulse0
