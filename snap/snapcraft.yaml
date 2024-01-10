@@ -40,6 +40,7 @@ apps:
       - audio-playback
       - x11
       - network-bind
+      - system-observe
     environment:
        LC_ALL: C.UTF-8
        LD_LIBRARY_PATH: "$SNAP/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/pulseaudio:$SNAP/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/samba"
