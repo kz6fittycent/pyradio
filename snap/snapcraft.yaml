@@ -23,10 +23,21 @@ architectures:
   - build-on: arm64
   - build-on: armhf
 
+layout:
+  /etc/mplayer/mplayer.conf:
+    symlink: $SNAP_DATA/etc/mplayer/mplayer.conf
+  /etc/mplayer/input.conf:
+    symlink: $SNAP_DATA/etc/mplayer/input.conf
+    
 apps:
   pyradio:
     command: bin/pyradio
-    plugs: [network, audio-playback, x11, network-bind]
+    plugs: 
+      - home
+      - network
+      - audio-playback
+      - x11
+      - network-bind
     environment:
        LC_ALL: C.UTF-8
        LD_LIBRARY_PATH: "$SNAP/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/pulseaudio:$SNAP/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/samba"
