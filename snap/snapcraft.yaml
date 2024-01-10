@@ -47,12 +47,11 @@ parts:
         - libpulse0
         - samba-libs
         - libdca0
-        - libasound2
+        - libasound2-dev
         - libgpm2
         - libglu1-mesa
         - freeglut3
         - libslang2
-        - libasound2
         - libavcodec58
         - libavfilter7
         - libavdevice58
