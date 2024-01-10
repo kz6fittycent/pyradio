@@ -7,7 +7,7 @@ description: |
 
   This snap is maintained by the Snapcrafters community, and is not necessarily endorsed or officially maintained by the upstream developers.
 
-base: core22
+base: core20
 grade: stable
 confinement: strict
 
@@ -43,15 +43,12 @@ parts:
         - rich
         - netifaces
     stage-packages:
-        - mpv
+        - mplayer
         - libpulse0
         - samba-libs
         - libdca0
-        - libasound2-dev
+        - libasound2
         - libgpm2
         - libglu1-mesa
         - freeglut3
         - libslang2
-        - libavcodec58
-        - libavfilter7
-        - libavdevice58
