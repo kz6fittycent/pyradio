@@ -25,11 +25,11 @@ architectures:
 
 layout:
   /etc/mplayer/mplayer.conf:
-    symlink: $SNAP/etc/mplayer/mplayer.conf
+    symlink: $SNAP_DATA/etc/mplayer/mplayer.conf
   /etc/mplayer/input.conf:
-    symlink: $SNAP/etc/mplayer/input.conf
+    symlink: $SNAP_DATA/etc/mplayer/input.conf
   /etc/openal/alsoft.conf:
-    bind-file: $SNAP/etc/openal/alsoft.conf
+    bind-file: $SNAP_DATA/etc/openal/alsoft.conf
     
 apps:
   pyradio:
